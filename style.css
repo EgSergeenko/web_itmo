@@ -83,7 +83,7 @@
     width: 70%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
 }
 
 .left {
@@ -99,3 +99,18 @@
     text-align: center;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
