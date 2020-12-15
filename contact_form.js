@@ -16,34 +16,40 @@ var ContactForm = function (_React$Component) {
 
         _this.state = {
             phone: '',
-            date: ''
+            date: '',
+            sended: false
         };
 
         _this.handleChangePhone = _this.handleChangePhone.bind(_this);
         _this.handleChangeDate = _this.handleChangeDate.bind(_this);
         _this.handleSubmit = _this.handleSubmit.bind(_this);
+        _this.sendAgain = _this.sendAgain.bind(_this);
 
         return _this;
     }
 
     _createClass(ContactForm, [{
+        key: 'sendAgain',
+        value: function sendAgain() {
+            this.setState({ sended: false });
+        }
+    }, {
         key: 'handleChangePhone',
         value: function handleChangePhone(event) {
             this.setState({ phone: event.target.value });
-            console.log(this.state.phone);
         }
     }, {
         key: 'handleChangeDate',
         value: function handleChangeDate(event) {
             this.setState({ date: event.target.value });
-            console.log(this.state.date);
         }
     }, {
         key: 'handleSubmit',
         value: function handleSubmit(event) {
-            event.preventDefault();
+            this.setState({ sended: true, date: '', phone: '' });
             console.log('Отправленный номер: ' + this.state.phone);
             console.log('Отправленный дата: ' + this.state.date);
+            event.preventDefault();
         }
     }, {
         key: 'render',
@@ -92,13 +98,27 @@ var ContactForm = function (_React$Component) {
                             '\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0443\u0434\u043E\u0431\u043D\u044B\u0435 \u0432\u0440\u0435\u043C\u044F \u0438 \u0434\u0430\u0442\u0443 \u0434\u043B\u044F \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E \u0437\u0432\u043E\u043D\u043A\u0430'
                         )
                     ),
-                    React.createElement(
+                    this.state.sended ? React.createElement('div', null) : React.createElement(
                         'button',
                         { type: 'submit', className: 'btn btn-secondary btn-block mt-2 w-100',
                             'aria-pressed': 'true' },
                         '\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C'
                     )
-                )
+                ),
+                this.state.sended ? React.createElement(
+                    'div',
+                    null,
+                    React.createElement(
+                        'p',
+                        { className: 'mt-3 text-success' },
+                        '\u0412\u0430\u0448\u0430 \u043E\u0442\u0432\u0435\u0442 \u0437\u0430\u043F\u0438\u0441\u0430\u043D, \u043C\u044B \u0441\u043A\u043E\u0440\u043E \u0441\u0432\u044F\u0436\u0435\u043C\u0441\u044F \u0441 \u0412\u0430\u043C\u0438.'
+                    ),
+                    React.createElement(
+                        'button',
+                        { onClick: this.sendAgain, className: 'btn btn-secondary w-100' },
+                        '\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u0435\u0449\u0435 \u043E\u0434\u0438\u043D \u043E\u0442\u0432\u0435\u0442'
+                    )
+                ) : React.createElement('p', null)
             );
         }
     }]);

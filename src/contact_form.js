@@ -4,28 +4,33 @@ class ContactForm extends React.Component {
         this.state = {
             phone: '',
             date: '',
+            sended: false,
         };
 
         this.handleChangePhone = this.handleChangePhone.bind(this);
         this.handleChangeDate = this.handleChangeDate.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.sendAgain = this.sendAgain.bind(this);
 
+    }
+
+    sendAgain() {
+        this.setState({sended: false});
     }
 
     handleChangePhone(event) {
         this.setState({phone: event.target.value});
-        console.log(this.state.phone)
     }
 
     handleChangeDate(event) {
         this.setState({date: event.target.value});
-        console.log(this.state.date)
     }
 
     handleSubmit(event) {
-        event.preventDefault();
+        this.setState({sended: true, date: '', phone: ''});
         console.log('Отправленный номер: ' + this.state.phone);
         console.log('Отправленный дата: ' + this.state.date);
+        event.preventDefault();
     }
 
     render() {
@@ -47,10 +52,17 @@ class ContactForm extends React.Component {
                         <small id="phoneHelp" className="form-text text-muted">Выберите удобные время и дату для
                             обратного звонка</small>
                     </div>
-                    <button type="submit" className="btn btn-secondary btn-block mt-2 w-100"
-                            aria-pressed="true">Отправить
-                    </button>
+                    {this.state.sended ? <div/> :
+                        <button type="submit" className="btn btn-secondary btn-block mt-2 w-100"
+                                aria-pressed="true">Отправить
+                        </button>}
                 </form>
+                {this.state.sended ?
+                    <div><p className={'mt-3 text-success'}>Ваша ответ записан, мы скоро свяжемся с Вами.</p>
+                        <button onClick={this.sendAgain} className={'btn btn-secondary w-100'}>Записать еще один ответ
+                        </button>
+                    </div>
+                    : <p/>}
             </div>
         );
     }
