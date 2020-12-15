@@ -56,7 +56,7 @@ var ContactForm = function (_React$Component) {
         value: function render() {
             return React.createElement(
                 'div',
-                { className: 'container w-50 mt-3' },
+                { className: 'container w-100 mt-3' },
                 React.createElement(
                     'h3',
                     { className: 'section_name' },

@@ -35,7 +35,7 @@ class ContactForm extends React.Component {
 
     render() {
         return (
-            <div className={'container w-50 mt-3'}>
+            <div className={'container w-100 mt-3'}>
                 <h3 className={'section_name'}>Свяжитесь с нами</h3>
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group mt-2">
