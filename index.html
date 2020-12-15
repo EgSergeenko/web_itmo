@@ -90,6 +90,22 @@
 </div>
 <div id="contact_form">
 </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Специальные предложения</h5>
+            </div>
+            <div class="modal-body">
+                Какой-то контент
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Нет, спасибо.</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="footer">
     <div>Какой-то контент в футере</div>
 </div>
@@ -107,5 +123,10 @@
 <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 <script src="contact_form.js"></script>
+<script type="text/javascript">
+    $(window).on('load', function () {
+        $('#myModal').modal('show');
+    });
+</script>
 </body>
 </html>
