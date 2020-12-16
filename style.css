@@ -126,6 +126,9 @@
     position: absolute;
     top: 20px;
     right: 50px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .top-left {
@@ -134,7 +137,11 @@
     top: 20px;
     left: 50px;
     font-size: 40px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
+
 
 .bottom-right {
     padding: 7px;
