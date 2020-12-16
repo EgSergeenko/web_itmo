@@ -88,6 +88,26 @@
         </div>
     </div>
 </div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-6 discount">
+            <img style="border-radius: 10px" src="away.jpg" class="w-100" alt="">
+            <div class="top-right">Скидка 5% <br/>на кофе с собой</div>
+            <div class="bottom-right btn btn-primary" data-toggle="tooltip" data-html="true" data-placement="left"
+                 title="Акция действительна при <br/> покупке кофе в бумажном стакане.">
+                Подробнее
+            </div>
+        </div>
+        <div class="col-6 discount">
+            <img style="border-radius: 10px" src="students.jpg" class="w-100" alt="">
+            <div class="top-left">Скидка 10% <br/> для студентов</div>
+            <div class="bottom-left btn btn-primary" data-toggle="tooltip" data-html="true" data-placement="right"
+                 title="Акция действительна при предъявлении официального документа.">
+                Подробнее
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container mt-3 d-flex justify-content-center">
     <div class="row">
         <div class="col-7 mt-3">
@@ -139,6 +159,9 @@
     $(window).on('load', function () {
         $('#myModal').modal('show');
     });
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 </script>
 </body>
 </html>
