@@ -43,14 +43,14 @@ class ContactForm extends React.Component {
                         <input required type="tel" className="form-control mt-1" id="phone"
                                aria-describedby="phoneHelp"
                                placeholder="89876543210" value={this.state.phone} onChange={this.handleChangePhone}/>
-                        <small id="phoneHelp" className="form-text text-muted">Введите свой номер телефона</small>
+                        <small id="phoneHelp" className="form-text text-muted">Введите свой номер телефона.</small>
                     </div>
                     <div className="form-group mt-2">
                         <label htmlFor="date">Дата и время</label>
                         <input required type="datetime-local" className="form-control mt-1" id="date"
                                aria-describedby="phoneHelp" value={this.state.date} onChange={this.handleChangeDate}/>
-                        <small id="phoneHelp" className="form-text text-muted">Выберите удобные время и дату для
-                            обратного звонка</small>
+                        <small id="phoneHelp" className="form-text text-muted">Выберите удобную дату для
+                            обратного звонка.</small>
                     </div>
                     {this.state.sended ? <div/> :
                         <button type="submit" className="btn btn-secondary btn-block mt-2 w-100"
@@ -58,7 +58,7 @@ class ContactForm extends React.Component {
                         </button>}
                 </form>
                 {this.state.sended ?
-                    <div><p className={'mt-3 text-success'}>Ваша ответ записан, мы скоро свяжемся с Вами.</p>
+                    <div><p className={'mt-3 text-success'}>Мы скоро свяжемся с Вами.</p>
                         <button onClick={this.sendAgain} className={'btn btn-secondary w-100'}>Записать еще один ответ
                         </button>
                     </div>
@@ -71,3 +71,4 @@ class ContactForm extends React.Component {
 ReactDOM.render(
     <ContactForm/>
     , document.getElementById('contact_form'));
+

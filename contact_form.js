@@ -79,7 +79,7 @@ var ContactForm = function (_React$Component) {
                         React.createElement(
                             'small',
                             { id: 'phoneHelp', className: 'form-text text-muted' },
-                            '\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u0432\u043E\u0439 \u043D\u043E\u043C\u0435\u0440 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430'
+                            '\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u0432\u043E\u0439 \u043D\u043E\u043C\u0435\u0440 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430.'
                         )
                     ),
                     React.createElement(
@@ -95,7 +95,7 @@ var ContactForm = function (_React$Component) {
                         React.createElement(
                             'small',
                             { id: 'phoneHelp', className: 'form-text text-muted' },
-                            '\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0443\u0434\u043E\u0431\u043D\u044B\u0435 \u0432\u0440\u0435\u043C\u044F \u0438 \u0434\u0430\u0442\u0443 \u0434\u043B\u044F \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E \u0437\u0432\u043E\u043D\u043A\u0430'
+                            '\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0443\u0434\u043E\u0431\u043D\u0443\u044E \u0434\u0430\u0442\u0443 \u0434\u043B\u044F \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u0433\u043E \u0437\u0432\u043E\u043D\u043A\u0430.'
                         )
                     ),
                     this.state.sended ? React.createElement('div', null) : React.createElement(
@@ -111,7 +111,7 @@ var ContactForm = function (_React$Component) {
                     React.createElement(
                         'p',
                         { className: 'mt-3 text-success' },
-                        '\u0412\u0430\u0448\u0430 \u043E\u0442\u0432\u0435\u0442 \u0437\u0430\u043F\u0438\u0441\u0430\u043D, \u043C\u044B \u0441\u043A\u043E\u0440\u043E \u0441\u0432\u044F\u0436\u0435\u043C\u0441\u044F \u0441 \u0412\u0430\u043C\u0438.'
+                        '\u041C\u044B \u0441\u043A\u043E\u0440\u043E \u0441\u0432\u044F\u0436\u0435\u043C\u0441\u044F \u0441 \u0412\u0430\u043C\u0438.'
                     ),
                     React.createElement(
                         'button',
