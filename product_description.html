@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Каталог</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -11,8 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="scrollup.js"></script>
 </head>
 <body>
+<div class="scrollup">
+    <!-- Иконка fa-chevron-up (Font Awesome) -->
+    <i class="fa fa-chevron-up"></i>
+</div>
 <nav class="navbar navbar-expand-lg navbar-light header fixed-top">
     <div class="container-fluid d-flex justify-content-center">
         <a class="navbar-brand" href="index.html"><i class="fas fa-coffee fa-lg"></i></a>
@@ -91,8 +97,7 @@
             </div>
         </div>
     </div>
-    <div class="row mt-5"></div>
-    <div class="row">
+    <div class="row mt-5">
         <div class="col">
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="product_description/images/americano.jpg" alt="Card image cap">
@@ -152,7 +157,26 @@
         </div>
     </div>
 </div>
-<h1>Наши поставщики</h1>
+<div class="container">
+    <h1>Наши поставщики</h1>
+    <div class="row">
+        <div class="col">
+            <div class="container-fluid" style="background-color:transparent;">
+                <a href="https://www.lavazza.ru/ru.html" target="_blank"><img class="logo img-responsive" src="product_description/images/lavazza_logo.png" data-bs-hover-animate="pulse" style="padding-top:40px;padding-bottom:20px;"></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container-fluid" style="background-color:transparent;">
+                <a href="https://www.paulig.ru/ru" target="_blank"><img class="logo img-responsive" src="product_description/images/paulig_logo.png" data-bs-hover-animate="pulse" style="padding-top:30px;padding-bottom:20px;"></a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container-fluid" style="background-color:transparent;">
+                <a href="https://www.illy.com/en-us/home" target="_blank"><img class="logo img-responsive" src="product_description/images/illy_logo.png" data-bs-hover-animate="pulse" style="padding-bottom:20px;"></a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="footer">
     <div class="container">
         <div class="row">
