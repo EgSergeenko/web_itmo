@@ -35,7 +35,7 @@ class ReviewForm extends React.Component {
         let radios = [];
         for (let i = 1; i < 6; i++) {
             radios.push(
-                <div id={"rating" + i.toString()} className={'form-check'}>
+                <div key={"rating" + i.toString()} id={"rating" + i.toString()} className={'form-check'}>
                     <input id={"rating" + i.toString()} className={"form-check-input"} type="radio" value={i.toString()}
                            name={'rating'}
                            checked={this.state.rating === i.toString()}

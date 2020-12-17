@@ -173,15 +173,37 @@
     object-fit: cover;
 }
 
-.card-footer{
+.card-footer {
     background: transparent;
 }
 
-.price{
+.price {
     padding: 1px;
     margin: 1px;
     background: #a79086;
     color: white;
     border-radius: 10px;
 
+}
+
+.social:link {
+    color: white;
+}
+
+
+.social:visited {
+    color: white;
+}
+
+.social:hover {
+    color: gray;
+}
+
+.welcome {
+    background-color: #faf0e6;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 40px;
+    border: 3px solid gray;
 }

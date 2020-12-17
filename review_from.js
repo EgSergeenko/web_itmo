@@ -56,7 +56,7 @@ var ReviewForm = function (_React$Component) {
             for (var i = 1; i < 6; i++) {
                 radios.push(React.createElement(
                     'div',
-                    { id: "rating" + i.toString(), className: 'form-check' },
+                    { key: "rating" + i.toString(), id: "rating" + i.toString(), className: 'form-check' },
                     React.createElement('input', { id: "rating" + i.toString(), className: "form-check-input", type: 'radio', value: i.toString(),
                         name: 'rating',
                         checked: this.state.rating === i.toString(),
