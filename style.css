@@ -121,13 +121,9 @@
 
 .top-right {
     text-align: right;
-    font-size: 40px;
     position: absolute;
     top: 20px;
     right: 50px;
-    font-weight: bold;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
 }
 
 .top-left {
@@ -135,12 +131,14 @@
     position: absolute;
     top: 20px;
     left: 50px;
+}
+
+.decorated {
     font-size: 40px;
     font-weight: bold;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
-
 
 .bottom-right {
     padding: 7px;
@@ -200,10 +198,12 @@
 }
 
 .welcome {
+    top: 100px;
     background-color: #faf0e6;
     border-radius: 10px;
     margin: 0 auto;
     padding: 20px;
     font-size: 40px;
     border: 3px solid gray;
+    font-weight: 300;
 }
