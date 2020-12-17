@@ -232,3 +232,18 @@
 div.scrollup:hover {
     background-color: #000; /* цвет заднего фона при наведении */
 }
+
+.vendor{
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+
+.vendor:hover{
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity:1;
+    filter:alpha(opacity=100);
+}
